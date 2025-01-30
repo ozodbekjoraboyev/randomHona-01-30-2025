@@ -160,7 +160,7 @@ function App() {
   console.log();
 
   return (
-    <>
+    <div className=" border-2 w-[600px] pl-8 p-2 m-auto">
       <div className=" m-auto w-[650px]  grid grid-cols-2 container gap-3  items-center">
         {xona.partalar.map((stolar, parta_index) => {
           return (
@@ -177,7 +177,7 @@ function App() {
                       key={item.id}
                       className={` ${
                         random === parta_index && stol === stol_index
-                          ? "bg-red-700"
+                          ? "bg-red-700 "
                           : "bg-amber-600 "
                       } mt-1  w-10 ${
                         item.bormi ? " h-7 " : " h-2"
@@ -192,7 +192,7 @@ function App() {
           );
         })}
       </div>
-      <div className="m-auto flex  container justify-center -ml-14">
+      <div className="m-auto flex  container justify-center -ml-5">
         <button
           onClick={number_son}
           className=" bg-green-600 px-10 py-2 rounded-xl cursor-pointer  text-white "
@@ -200,7 +200,7 @@ function App() {
           Random
         </button>
       </div>
-    </>
+    </div>
   );
 
   //! 1 misol
